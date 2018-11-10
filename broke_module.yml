@@ -1,0 +1,8 @@
+# DO NOT MODIFY THIS PLAYBOOK IN ANY WAY
+- name: Broken Module Exercise
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Calling the FUBAR module
+      fubar_module:
+          string: foobar

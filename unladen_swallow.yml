@@ -1,0 +1,8 @@
+---
+- name: 8Ball Test
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Unladen Swallow Test
+      debug:
+        msg: "{{ lookup('8ball','Is the airspeed velocity of an unladen African Swallow greater than that a European Swallow?') }}"
