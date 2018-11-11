@@ -40,8 +40,7 @@ tasks:
         name: "{{ item }}"
         state: present
       with_items:
-        - htop
-        - lsof
+ 		-lsof
         - strace
-        - iftop
+        - vim
  		- tcpdump 
